@@ -18,33 +18,44 @@ internal class StateMachine
     public StateMachine()
     {
         state = State.Init;
-        Debug.Log(state + "StateMachine默认构造函数");
     }
     State state;
     public void Run()
     {
-        Debug.Log(state);
         switch(state)
         {
             case State.Init:
                 {
-                    Manager.GetInstance().Init();
+                    Manager.Instance.Init();
                 }
                 break;
             case State.Logo:
                 {
                     //切换到公司LOGO场景
-                    new CompanyLogoView();
+                    if (Manager.Instance.companyLogoView == null)
+                        Manager.Instance.companyLogoView = new CompanyLogoView();
+                    else
+                        Manager.Instance.companyLogoView.AnimIsDone();
                 }
                 break;
             case State.Logo2:
                 {
-
+                    if (Manager.Instance.cooperationLogoView == null)
+                        Manager.Instance.cooperationLogoView = new CooperationLogoView();
+                    else
+                        Manager.Instance.cooperationLogoView.Run();
                 }
                 break;
             case State.Menu:
                 {
+                    if(Manager.Instance.menuView == null)
+                    {
+                        Manager.Instance.menuView = new MenuView();
+                    }
+                    //else
+                    //{
 
+                    //}
                 }
                 break;
             case State.Run:
@@ -63,6 +74,5 @@ internal class StateMachine
     public void SetState(State state)
     {
         this.state = state;
-        Debug.Log(state);
     }
 }

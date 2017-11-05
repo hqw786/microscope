@@ -8,11 +8,12 @@ public class Main : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         DontDestroyOnLoad(this.gameObject);
-        Manager.GetInstance().SetStateMachineState(State.Init);
+        Manager.Instance.SetStateMachineState(State.Init);
+        Manager.Instance.print("启动");
 	}
 	
 	// Update is called once per frame
 	void Update () {
-        Manager.GetInstance().stateMachine.Run();
+        Manager.Instance.stateMachine.Run();
 	}
 }
