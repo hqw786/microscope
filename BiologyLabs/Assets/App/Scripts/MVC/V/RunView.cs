@@ -11,6 +11,11 @@ class RunView : View
         Manager.Instance.microscope = new Microscope();
     }
 
+    public void Init()
+    {
+
+    }
+
     internal override void ExecuteRequest(string message, object args = null)
     {
         throw new NotImplementedException();

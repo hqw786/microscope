@@ -9,5 +9,6 @@ class Aim
     public Aim()
     {
         av = new AimView();
+
     }
 }

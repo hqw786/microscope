@@ -13,6 +13,9 @@ internal class MenuView : View
     {
         Manager.Instance.LoadScene(Define.SceneName_Menu);
         RegisterRequestEvent(Define.MSG_C_Run, new Menu_GoRunScene_Command().Execute);
+    }
+    internal void Init()
+    {
         GameObject g = GameObject.Find("/Canvas/Button");
         Manager.Instance.print(g.ToString());
         if (g != null)
@@ -21,7 +24,6 @@ internal class MenuView : View
             button.onClick.AddListener(ButtonOnClick);
         }
     }
-
     private void ButtonOnClick()
     {
         Manager.Instance.SetStateMachineState(State.Run);
@@ -31,4 +33,6 @@ internal class MenuView : View
     {
         throw new NotImplementedException();
     }
+
+    
 }

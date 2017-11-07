@@ -7,6 +7,11 @@ public abstract class Model
     //存储
     protected Dictionary<string, System.Action> NotifyEvent = new Dictionary<string, System.Action>();
 
+    protected void RegisterModel(Model m)
+    {
+        MVC.RegisterModel(m);
+    }
+
     /// <summary>
     /// 注册通知事件
     /// </summary>
