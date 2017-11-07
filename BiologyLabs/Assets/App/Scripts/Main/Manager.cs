@@ -15,12 +15,21 @@ internal class Manager
     }
     #endregion
 
-
+    //异步加载
+    AsyncOperation async;
     //状态机
     public StateMachine stateMachine = new StateMachine();
-    public CompanyLogoView companyLogoView;
-    public CooperationLogoView cooperationLogoView;
-    public MenuView menuView;
+    //
+    public Microscope microscope;
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+
+
     public void Init()
     {
         //切换状态
@@ -36,7 +45,12 @@ internal class Manager
     }
     public void LoadScene(string name)
     {
-        SceneManager.LoadScene(name);
+        async = SceneManager.LoadSceneAsync(name);
+        while (async.progress < 0.9f)
+        {
+            System.Threading.Thread.Sleep(100);
+        }
+        System.Threading.Thread.Sleep(3000);
     }
     public void print(string str)
     {

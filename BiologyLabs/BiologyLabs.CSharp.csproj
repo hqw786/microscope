@@ -90,19 +90,26 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\App\Scripts\Effects\CameraFilterPack_Blur_Movie.cs" />
-    <Compile Include="Assets\App\Scripts\MVC\C\CompanyLogoCommand.cs" />
+    <Compile Include="Assets\App\Scripts\MVC\C\Menu_GoRunScene_Command.cs" />
     <Compile Include="Assets\App\Scripts\MVC\Core\Controller.cs" />
     <Compile Include="Assets\App\Scripts\MVC\Core\MVC.cs" />
     <Compile Include="Assets\App\Scripts\MVC\Core\Model.cs" />
     <Compile Include="Assets\App\Scripts\MVC\Core\View.cs" />
-    <Compile Include="Assets\App\Scripts\MVC\M\LogoVideoModel.cs" />
     <Compile Include="Assets\App\Scripts\MVC\V\CompanyLogoView.cs" />
     <Compile Include="Assets\App\Scripts\MVC\V\CooperationLogoView.cs" />
     <Compile Include="Assets\App\Scripts\MVC\V\MenuView.cs" />
+    <Compile Include="Assets\App\Scripts\MVC\V\RunView.cs" />
     <Compile Include="Assets\App\Scripts\Main\Define.cs" />
     <Compile Include="Assets\App\Scripts\Main\Main.cs" />
     <Compile Include="Assets\App\Scripts\Main\Manager.cs" />
     <Compile Include="Assets\App\Scripts\Main\StateMachine.cs" />
+    <Compile Include="Assets\App\Scripts\Microoscope\Aim.cs" />
+    <Compile Include="Assets\App\Scripts\Microoscope\AimModel.cs" />
+    <Compile Include="Assets\App\Scripts\Microoscope\AimView.cs" />
+    <Compile Include="Assets\App\Scripts\Microoscope\Lens.cs" />
+    <Compile Include="Assets\App\Scripts\Microoscope\LensModel.cs" />
+    <Compile Include="Assets\App\Scripts\Microoscope\LensView.cs" />
+    <Compile Include="Assets\App\Scripts\Microoscope\Microscope.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\App\Shader\CameraFilterPack_Blur_Movie.shader" />

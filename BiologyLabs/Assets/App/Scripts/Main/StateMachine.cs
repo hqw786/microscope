@@ -15,6 +15,12 @@ public enum State
 }
 internal class StateMachine
 {
+    public CompanyLogoView companyLogoView;
+    public CooperationLogoView cooperationLogoView;
+    public MenuView menuView;
+    public RunView runView;
+
+
     public StateMachine()
     {
         state = State.Init;
@@ -32,25 +38,25 @@ internal class StateMachine
             case State.Logo:
                 {
                     //切换到公司LOGO场景
-                    if (Manager.Instance.companyLogoView == null)
-                        Manager.Instance.companyLogoView = new CompanyLogoView();
+                    if (companyLogoView == null)
+                        companyLogoView = new CompanyLogoView();
                     else
-                        Manager.Instance.companyLogoView.AnimIsDone();
+                        companyLogoView.AnimIsDone();
                 }
                 break;
             case State.Logo2:
                 {
-                    if (Manager.Instance.cooperationLogoView == null)
-                        Manager.Instance.cooperationLogoView = new CooperationLogoView();
+                    if (cooperationLogoView == null)
+                        cooperationLogoView = new CooperationLogoView();
                     else
-                        Manager.Instance.cooperationLogoView.Run();
+                        cooperationLogoView.Run();
                 }
                 break;
             case State.Menu:
                 {
-                    if(Manager.Instance.menuView == null)
+                    if(menuView == null)
                     {
-                        Manager.Instance.menuView = new MenuView();
+                        menuView = new MenuView();
                     }
                     //else
                     //{
@@ -60,7 +66,10 @@ internal class StateMachine
                 break;
             case State.Run:
                 {
-
+                    if(runView == null)
+                    {
+                        runView = new RunView();
+                    }
                 }
                 break;
             case State.End:

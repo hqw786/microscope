@@ -3,6 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Main : MonoBehaviour {
+    public void OnLevelWasLoaded(int level)
+    {
+
+    }
 
     //Manager manager = Manager.GetInstance();
 	// Use this for initialization

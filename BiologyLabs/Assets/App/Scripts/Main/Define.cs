@@ -17,4 +17,5 @@ internal static class Define
     public const string MSG_C_CompanyLogo = "显示自己公司Logo";
     public const string MSG_C_CooperationLogo = "显示合作公司Logo";
     public const string MSG_C_Menu = "进入Menu场景";
+    public const string MSG_C_Run = "进入Run场景";
 }

@@ -8,7 +8,7 @@ using System.Linq;
 public abstract class View //: MonoBehaviour
 {
     //存储请求事件
-    protected Dictionary<string, System.Action> RequestEvent = new Dictionary<string, System.Action>();
+    protected Dictionary<string, System.Action<object>> RequestEvent = new Dictionary<string, System.Action<object>>();
 
     //视图名称
     //protected virtual string Name { get; }
@@ -18,7 +18,7 @@ public abstract class View //: MonoBehaviour
     /// </summary>
     /// <param name="message"></param>
     /// <param name="func"></param>
-    protected void RegisterRequestEvent(string message, System.Action func)
+    protected void RegisterRequestEvent(string message, System.Action<object> func)
     {
         RequestEvent.Add(message, func);
     }

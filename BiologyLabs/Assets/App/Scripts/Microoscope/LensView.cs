@@ -2,11 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using UnityEngine;
 
-internal class LogoVideoModel : Model
+class LensView : View
 {
 
-    internal override void ExecuteNotify(string message, object args = null)
+    internal override void ExecuteRequest(string message, object args = null)
     {
         throw new NotImplementedException();
     }
