@@ -5,7 +5,7 @@ using System.Text;
 
 class Aim
 {
-    AimView av;
+    public AimView av;
     public Aim()
     {
         av = new AimView();

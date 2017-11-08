@@ -6,8 +6,8 @@ using System.Text;
 
 class Microscope
 {
-    Lens lens;
-    Aim aim;
+    public Lens lens;
+    public Aim aim;
 
     public Microscope()
     {

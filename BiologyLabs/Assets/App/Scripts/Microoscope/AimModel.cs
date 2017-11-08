@@ -23,7 +23,7 @@ class AimModel : Model
     public float GetAimRadius()
     {
         if (travel_Vertical == 0) return -1;
-        return Math.Abs(focus - curDis) / travel_Vertical * 1000f;
+        return Math.Abs(focus - curDis * 1000) / travel_Vertical * 1000f;
     }
     public void GetCurDis(Vector3 p1,Vector3 p2)
     {

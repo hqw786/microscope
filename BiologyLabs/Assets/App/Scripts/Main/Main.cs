@@ -5,9 +5,13 @@ using UnityEngine;
 public class Main : MonoBehaviour {
     public void OnLevelWasLoaded(int level)
     {
-        if (level == 3 || level == 4)
+        if (level == 3)
         {
             Manager.Instance.stateMachine.menuView.Init();
+        }
+        if(level == 4)
+        {
+            Manager.Instance.stateMachine.runView.Init();
         }
     }
 

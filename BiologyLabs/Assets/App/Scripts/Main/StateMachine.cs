@@ -70,6 +70,10 @@ internal class StateMachine
                     {
                         runView = new RunView();
                     }
+                    else
+                    {
+                        runView.Run();
+                    }
                 }
                 break;
             case State.End:
