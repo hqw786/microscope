@@ -13,11 +13,13 @@
     <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
-    <CompilerResponseFile></CompilerResponseFile>
+    <CompilerResponseFile>
+    </CompilerResponseFile>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows:5</UnityBuildTarget>
     <UnityVersion>5.6.1p4</UnityVersion>
-    <RootNamespace></RootNamespace>
+    <RootNamespace>
+    </RootNamespace>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -75,17 +77,23 @@
     <Reference Include="UnityEditor">
       <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
     </Reference>
-    <Reference Include="DOTween">
-      <HintPath>Assets\Plugs\DOTween\DOTween.dll</HintPath>
-    </Reference>
-    <Reference Include="DOTween43">
-      <HintPath>Assets\Plugs\DOTween\DOTween43.dll</HintPath>
-    </Reference>
     <Reference Include="DOTween46">
-      <HintPath>Assets\Plugs\DOTween\DOTween46.dll</HintPath>
+      <HintPath>Assets\Plugs\Demigiant\DOTween\DOTween46.dll</HintPath>
     </Reference>
     <Reference Include="DOTween50">
-      <HintPath>Assets\Plugs\DOTween\DOTween50.dll</HintPath>
+      <HintPath>Assets\Plugs\Demigiant\DOTween\DOTween50.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTween43">
+      <HintPath>Assets\Plugs\Demigiant\DOTween\DOTween43.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTween">
+      <HintPath>Assets\Plugs\Demigiant\DOTween\DOTween.dll</HintPath>
+    </Reference>
+    <Reference Include="DemiLib">
+      <HintPath>Assets\Plugs\Demigiant\DemiLib\DemiLib.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTweenPro">
+      <HintPath>Assets\Plugs\Demigiant\DOTweenPro\DOTweenPro.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -103,22 +111,30 @@
     <Compile Include="Assets\App\Scripts\Main\Main.cs" />
     <Compile Include="Assets\App\Scripts\Main\Manager.cs" />
     <Compile Include="Assets\App\Scripts\Main\StateMachine.cs" />
-    <Compile Include="Assets\App\Scripts\Microoscope\Aim.cs" />
     <Compile Include="Assets\App\Scripts\Microoscope\AimModel.cs" />
     <Compile Include="Assets\App\Scripts\Microoscope\AimView.cs" />
     <Compile Include="Assets\App\Scripts\Microoscope\Lens.cs" />
     <Compile Include="Assets\App\Scripts\Microoscope\LensModel.cs" />
     <Compile Include="Assets\App\Scripts\Microoscope\LensView.cs" />
     <Compile Include="Assets\App\Scripts\Microoscope\Microscope.cs" />
+    <Compile Include="Assets\App\Scripts\Roam\RoamManager.cs" />
+    <Compile Include="Assets\App\Scripts\Roam\RoamPathManager.cs" />
+    <Compile Include="Assets\Plugs\Demigiant\DOTweenPro\DOTweenAnimation.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\App\Shader\CameraFilterPack_Blur_Movie.shader" />
-    <None Include="Assets\Plugs\DOTween\DOTween.XML" />
-    <None Include="Assets\Plugs\DOTween\DOTween43.xml" />
-    <None Include="Assets\Plugs\DOTween\DOTween46.xml" />
-    <None Include="Assets\Plugs\DOTween\DOTween50.xml" />
-    <None Include="Assets\Plugs\DOTween\Editor\DOTweenEditor.XML" />
-    <None Include="Assets\Plugs\DOTween\readme.txt" />
+    <None Include="Assets\Plugs\Demigiant\DOTween\DOTween.XML" />
+    <None Include="Assets\Plugs\Demigiant\DOTween\DOTween43.xml" />
+    <None Include="Assets\Plugs\Demigiant\DOTween\DOTween46.xml" />
+    <None Include="Assets\Plugs\Demigiant\DOTween\DOTween50.xml" />
+    <None Include="Assets\Plugs\Demigiant\DOTween\Editor\DOTweenEditor.XML" />
+    <None Include="Assets\Plugs\Demigiant\DOTween\readme.txt" />
+    <None Include="Assets\Plugs\Demigiant\DOTweenPro\DOTweenPro.XML" />
+    <None Include="Assets\Plugs\Demigiant\DOTweenPro\Editor\DOTweenProEditor.XML" />
+    <None Include="Assets\Plugs\Demigiant\DOTweenPro\readme.txt" />
+    <None Include="Assets\Plugs\Demigiant\DemiLib\DemiLib.xml" />
+    <None Include="Assets\Plugs\Demigiant\DemiLib\Editor\DemiEditor.XML" />
+    <None Include="Assets\Plugs\Demigiant\readme_DOTweenPro.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2013\UnityVS.CSharp.targets" />
 </Project>

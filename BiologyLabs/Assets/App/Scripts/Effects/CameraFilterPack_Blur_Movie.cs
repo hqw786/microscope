@@ -71,7 +71,7 @@ public class CameraFilterPack_Blur_Movie : MonoBehaviour
             material.SetFloat("_TimeX", TimeX);
             material.SetFloat("_Radius", Radius / DownScale);
             material.SetFloat("_Factor", Factor);
-            print("radius : " + Radius / DownScale + "    Factor : " + Factor);
+            //print("radius : " + Radius / DownScale + "    Factor : " + Factor);
             material.SetVector("_ScreenResolution", new Vector2(Screen.width / DownScale, Screen.height / DownScale));
             int rtW = sourceTexture.width / DownScale;
             int rtH = sourceTexture.height / DownScale;

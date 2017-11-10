@@ -11,15 +11,20 @@ class RunView : View
         Manager.Instance.LoadScene(Define.SceneName_Run);
         Manager.Instance.microscope = new Microscope();
     }
-
+    /// <summary>
+    /// 初始化。场景加载完成之后
+    /// </summary>
     public void Init()
     {
         microscope = Manager.Instance.microscope;
-        microscope.aim.av.Init();
+        microscope.aim.Init();
+        //漫游实例
+        Manager.Instance.roamPathManager = new RoamPathManager();
+        Manager.Instance.roamManager = new RoamManager();
     }
     public void Run()
     {
-        microscope.aim.av.Run();
+        microscope.aim.Run();
     }
     internal override void ExecuteRequest(string message, object args = null)
     {

@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BiologyLabs.CSharp", "BiologyLabs.CSharp.csproj", "{96DC9956-CB35-21C2-53AA-8CC8C6D37509}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BiologyLabs.CSharp.Editor", "BiologyLabs.CSharp.Editor.csproj", "{1B4E8323-E924-42EA-2021-0C58C783C3B7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +15,10 @@ Global
 		{96DC9956-CB35-21C2-53AA-8CC8C6D37509}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{96DC9956-CB35-21C2-53AA-8CC8C6D37509}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{96DC9956-CB35-21C2-53AA-8CC8C6D37509}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B4E8323-E924-42EA-2021-0C58C783C3B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B4E8323-E924-42EA-2021-0C58C783C3B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B4E8323-E924-42EA-2021-0C58C783C3B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B4E8323-E924-42EA-2021-0C58C783C3B7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

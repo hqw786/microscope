@@ -22,7 +22,9 @@ internal class Manager
     //
     public Microscope microscope;
     //
+    public RoamPathManager roamPathManager;
     //
+    public RoamManager roamManager;
     //
     //
     //
@@ -46,12 +48,6 @@ internal class Manager
     public void LoadScene(string name)
     {
         SceneManager.LoadScene(name);
-        //async = SceneManager.LoadSceneAsync(name);
-        //while (async.progress < 0.9f)
-        //{
-        //    System.Threading.Thread.Sleep(100);
-        //}
-        //System.Threading.Thread.Sleep(3000);
     }
     public void print(string str)
     {

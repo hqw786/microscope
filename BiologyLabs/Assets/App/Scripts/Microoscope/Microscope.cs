@@ -7,11 +7,11 @@ using System.Text;
 class Microscope
 {
     public Lens lens;
-    public Aim aim;
+    public AimView aim;
 
     public Microscope()
     {
         lens = new Lens();
-        aim = new Aim();
+        aim = new AimView();
     }
 }

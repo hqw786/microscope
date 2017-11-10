@@ -12,6 +12,8 @@ internal static class Define
     public const string SceneName_Menu = "04Menu";
     public const string SceneName_Run = "05Run";
     public const string SceneName_End = "06End";
+    //漫游子路径名称
+    public const string RoamPathName_1 = "RoamPath_1";
     //命令
     public const string MSG_C_DataInit = "数据初始化";
     public const string MSG_C_CompanyLogo = "显示自己公司Logo";

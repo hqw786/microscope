@@ -50,7 +50,7 @@ class AimView : View
         {
             am.GetCurDis(camera.transform.position, image.transform.position);
             float temp = am.GetAimRadius();
-            Manager.Instance.print(temp.ToString());
+            //Manager.Instance.print(temp.ToString());
             if (temp < 0)
             {
                 Manager.Instance.print("模糊类返回数据出错，请检查（垂直行程为0）");
